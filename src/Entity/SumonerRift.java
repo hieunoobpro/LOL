@@ -3,19 +3,19 @@ package Entity;
 import java.util.ArrayList;
 
 public class SumonerRift {
-    private ArrayList<Champain> t1;
-    private ArrayList<Champain> g2;
+    private ArrayList<Figure> SKT;
+    private ArrayList<Figure> G2;
 
-    public SumonerRift(ArrayList<Champain> t1, ArrayList<Champain> g2) {
-        this.t1 = t1;
-        this.g2 = g2;
+    public SumonerRift(ArrayList<Figure> SKT, ArrayList<Figure> G2) {
+        this.SKT = SKT;
+        this.G2 = G2;
     }
 
     @Override
     public String toString() {
         return "SumonerRift{" +
-                "\nt1=" + t1 +
-                "\ng2=" + g2 +
+                "\nSKT = " + SKT +
+                "\nG2 = " + G2 +
                 '}';
     }
 }

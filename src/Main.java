@@ -1,26 +1,25 @@
-import Entity.Champain;
+import Entity.Figure;
 import Entity.SumonerRift;
-import Handle.ChampainHandle;
-
+import Handle.FigureHandle;
 import java.util.ArrayList;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ArrayList<Champain> t1 = new ArrayList<>();
-        ArrayList<Champain> g2 = new ArrayList<>();
-        ChampainHandle champainHandle = new ChampainHandle();
-        System.out.println("Nhap thong tin cho T1: ");
+        ArrayList<Figure> SKT = new ArrayList<>();
+        ArrayList<Figure> G2 = new ArrayList<>();
+        FigureHandle figureHandle = new FigureHandle();
+        System.out.println("Nhap thong tin cho SKT: ");
         for (int i = 0; i < 5; i++) {
-            Champain champain = champainHandle.t1Input(scanner);
-            t1.add(champain);
+            Figure figure = figureHandle.figureInput(scanner);
+            SKT.add(figure);
         }
         System.out.println("Nhap thong tin cho G2: ");
         for (int i = 0; i < 5; i++) {
-            Champain champain = champainHandle.t1Input(scanner);
-            g2.add(champain);
+            Figure figure = figureHandle.figureInput(scanner);
+            G2.add(figure);
         }
-        SumonerRift sumonerRift= new SumonerRift(t1,g2);
+        SumonerRift sumonerRift= new SumonerRift(SKT,G2);
         System.out.println(sumonerRift);
     }
 }

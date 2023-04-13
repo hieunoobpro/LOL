@@ -1,10 +1,10 @@
 package Entity;
 
-public class Champain {
+public class Figure {
 String name;
 String potition;
 
-    public Champain(String name, String potition) {
+    public Figure (String name, String potition) {
         this.name = name;
         this.potition = potition;
     }
